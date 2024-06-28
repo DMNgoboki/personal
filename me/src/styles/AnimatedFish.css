@@ -235,12 +235,7 @@ body::after {
 }
 
 .fish__tail-main {
-  --o: 0.9;
-  --l: 90%;
-  --c: hsla(250deg, 50%, var(--l), var(--o, 0.6));
-  width: var(--bodyW);
-  height: var(--bodyW);
-  background-color: var(--c);
+  background-color: hsla(250deg, 50%, 90%, 0.6);
   position: absolute;
   left: 0;
   bottom: var(--bodyW);
@@ -248,12 +243,7 @@ body::after {
 }
 
 .fish__tail-fork {
-  --o: 0.9;
-  --l: 95%;
-  --c: hsla(250deg, 50%, var(--l), var(--o, 0.6));
-  width: var(--bodyW);
-  height: var(--bodyW);
-  background-color: var(--c);
+  background-color: hsla(250deg, 50%, 95%, 0.6);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -274,9 +264,7 @@ body::after {
 }
 
 .fish__fin {
-  width: calc(var(--bodyW) / 8 * 3);
-  height: var(--bodyW);
-  background-color: var(--c);
+  background-color: hsla(250deg, 50%, 95%, 0.6);
   position: absolute;
   top: calc(var(--bodyW) * 1.5);
   left: calc(var(--bodyW) / 8 * 3);
@@ -285,12 +273,12 @@ body::after {
   transform: translateZ(calc(var(--bodyW) / 2)) rotateY(0deg) rotateX(5deg)
     rotate(10deg);
   animation: fin 1500ms infinite alternate linear;
+}
 
-  &--2 {
-    transform: translateZ(calc(var(--bodyW) / -2)) rotateY(0deg) rotateX(-5deg)
-      rotate(10deg);
-    animation: fin2 1500ms infinite alternate linear;
-  }
+.fish__fin--2 {
+  transform: translateZ(calc(var(--bodyW) / -2)) rotateY(0deg) rotateX(-5deg)
+    rotate(10deg);
+  animation: fin2 1500ms infinite alternate linear;
 }
 
 @keyframes tail {

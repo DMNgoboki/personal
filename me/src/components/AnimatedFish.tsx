@@ -1,10 +1,10 @@
 "use client";
 
+import "../styles/AnimatedFish.css";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import "../styles/AnimatedFish.css";
 
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
