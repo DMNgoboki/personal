@@ -13,13 +13,13 @@ import ThreeScene from "@/components/ThreeScene";
 export default function Home() {
   return (
     <div className="container">
-      <Header />
       <Head>
         <title>Three.js in Next.js</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <div className="experience">
+          <Header />
           <ThreeScene />
         </div>
         <div className="scrollTarget" />

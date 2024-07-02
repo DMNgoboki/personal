@@ -8,6 +8,8 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/Globals.css";
+import { Header } from "./header/Header";
+import { Hero } from "./hero/Hero";
 
 const Mathutils = {
   normalize: function ($value, $min, $max) {
@@ -140,7 +142,7 @@ const ThreeScene = () => {
     scene.add(light);
 
     let p1;
-    const updateCameraPercentage = (percentage) => {
+    const updateCameraPercentage = (percentage: any) => {
       p1 = path.getPointAt(percentage % 1);
       const p2 = path.getPointAt((percentage + 0.03) % 1);
       c.position.set(p1.x, p1.y, p1.z);
@@ -193,7 +195,7 @@ const ThreeScene = () => {
 
     window.addEventListener("resize", onResize);
 
-    const onMouseMove = (evt) => {
+    const onMouseMove = (evt: any) => {
       cameraRotationProxyX = Mathutils.map(
         evt.clientX,
         0,
@@ -218,7 +220,15 @@ const ThreeScene = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: "block" }} />;
+  return (
+    <>
+      <div className="overlay-text">
+        {" "}
+        <Hero />
+      </div>
+      <canvas ref={canvasRef} style={{ display: "block" }} />
+    </>
+  );
 };
 
 export default ThreeScene;

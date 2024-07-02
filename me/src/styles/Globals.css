@@ -1,3 +1,5 @@
+/* styles/ThreeScene.css */
+
 body {
   margin: 0;
 }
@@ -38,4 +40,15 @@ body {
   bottom: 0;
   right: 0;
   background: radial-gradient(circle, transparent 60%, black 150%);
+}
+
+.overlay-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  z-index: 10;
+  pointer-events: none;
 }

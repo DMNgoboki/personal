@@ -1,10 +1,12 @@
 "use client";
 
 import { serverskillslists, skillslists } from "@/components/SkillsList";
+import { Header } from "@/components/header/Header";
 
 export default function About() {
   return (
     <div className="container mx-auto">
+      <Header />
       <div className="flex  justify-center mt-[30px]">
         <div>About me</div>
       </div>
