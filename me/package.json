@@ -16,7 +16,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "react-locomotive-scroll": "^0.2.2"
+    "react-locomotive-scroll": "^0.2.2",
+    "three": "^0.166.0"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.3",

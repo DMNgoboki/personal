@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 
 export function Header() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto border">
       <div className="flex text-[30px] justify-around">
         {headerlists.map((headerlist) => (
           <Link key={headerlist.id} href={headerlist.link}>

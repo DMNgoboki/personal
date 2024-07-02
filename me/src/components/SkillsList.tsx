@@ -68,3 +68,33 @@ export const skillslists = [
     title: "MUI",
   },
 ];
+
+////////Server//////////
+
+export const serverskillslists = [
+  {
+    icon: <FaCss3Alt />,
+    id: 13456764,
+    title: "Express",
+  },
+  {
+    icon: <FaHtml5 />,
+    id: 1345676543,
+    title: "MySQL",
+  },
+  {
+    icon: <IoLogoJavascript />,
+    id: 1345676543,
+    title: "MongoDB",
+  },
+  {
+    icon: <SiTypescript />,
+    id: 13456743,
+    title: "NodeJs",
+  },
+  {
+    icon: <SiTypescript />,
+    id: 456743,
+    title: "GraphQL",
+  },
+];
