@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/honk": "^5.0.2",
+    "@fontsource/roboto": "^5.0.13",
     "@gsap/react": "^2.1.1",
     "@types/gsap": "^3.0.0",
     "gsap": "^3.12.5",

@@ -10,7 +10,7 @@ export function Hero() {
     <div className="container mx-auto mt-[100px]">
       <div className="flex w-full px-[50px]">
         <div className="w-6/12">
-          <h1 className="text-[30px]"> Hello, I'm Batbold.</h1>
+          <h1 className="text-[30px] Bungee Spice"> Hello, I'm Batbold.</h1>
           <h1 className="text-[30px]">I'm Fullstack devoloper.</h1>
         </div>
         <div className="w-6/12">
