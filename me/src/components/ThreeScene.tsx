@@ -8,6 +8,7 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/Globals.css";
+import "../styles/Font.css";
 import { Header } from "./header/Header";
 import { Hero } from "./hero/Hero";
 

@@ -13,6 +13,7 @@
     "@fontsource/roboto": "^5.0.13",
     "@gsap/react": "^2.1.1",
     "@types/gsap": "^3.0.0",
+    "framer-motion": "^12.0.0-alpha.0",
     "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",

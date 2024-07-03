@@ -17,12 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Honk&display=swap"
           rel="stylesheet"
         ></link>
-      </Head>
+      </Head> */}
       <body className={inter.className}>{children}</body>
     </html>
   );
