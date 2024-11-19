@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 
 export function Hero() {
   return (
-    <div className="container mx-auto mt-[100px]">
-      <div className="flex w-full px-[50px]">
+    <div className="container w-full mt-[100px]">
+      <div className="flex gap-[50px]">
         <div className="w-6/12">
           <h1 className="text-[30px] Bungee Spice"> Hello, I'm Batbold.</h1>
           <h1 className="text-[30px]">I'm Fullstack devoloper.</h1>
