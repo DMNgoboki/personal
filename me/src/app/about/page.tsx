@@ -11,9 +11,9 @@ export default function About() {
   const { x, y } = useFollowPointer(ref);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <Header />
-      <div className="flex  justify-center mt-[30px]">
+      <div className="flex justify-center mt-[30px]">
         <motion.div
           className="text-[30px] xl:text-[50px]"
           initial={{ opacity: 0, scale: 0.5 }}

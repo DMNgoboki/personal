@@ -14,7 +14,7 @@ export const headerlists = [
   {
     id: 1345676543,
     title: "PROJECT",
-    link: "/project",
+    link: "/projectt",
   },
   {
     id: 22344,
