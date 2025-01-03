@@ -47,7 +47,7 @@ const ThreeScene = () => {
     renderer.setSize(ww, wh);
 
     const scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0x194794, 0, 100);
+    scene.fog = new THREE.Fog(0x8b008b, 0, 100);
 
     const clock = new THREE.Clock();
 
@@ -121,7 +121,7 @@ const ThreeScene = () => {
       shininess: 20,
       bumpMap: mapHeight,
       bumpScale: -0.03,
-      specular: 0x0b2349,
+      specular: 0x8b008b,
     });
 
     const tube = new THREE.Mesh(geometry, material);
@@ -138,7 +138,7 @@ const ThreeScene = () => {
     const wireframe = new THREE.LineSegments(innerGeo, mat);
     scene.add(wireframe);
 
-    const light = new THREE.PointLight(0xffffff, 0.35, 4, 0);
+    const light = new THREE.PointLight(0xff00ff, 0.35, 4, 0);
     light.castShadow = true;
     scene.add(light);
 
@@ -163,7 +163,7 @@ const ThreeScene = () => {
           trigger: ".scrollTarget",
           start: "top top",
           end: "bottom 100%",
-          scrub: 5,
+          scrub: 8,
         },
       })
       .to(tubePerc, {
@@ -172,6 +172,15 @@ const ThreeScene = () => {
         duration: 10,
         onUpdate: () => {
           cameraTargetPercentage = tubePerc.percent;
+        },
+        onComplete: () => {
+          gsap.to(scene.fog.color, {
+            r: 0.54,
+            g: 0.0,
+            b: 0.54,
+            duration: 2,
+          });
+
         },
       });
 
