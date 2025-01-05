@@ -4,7 +4,7 @@ import { Header } from "@/components/header/Header";
 
 export default function Contact() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <Header />
       <div className="flex  justify-center mt-[30px]">
         <div className="text-7xl">Contact</div>
