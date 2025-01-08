@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <div>
-      <div className="container mx-auto text-black bg-gradient-to-r from-purple-500 to-pink-500">
+      <div className="container italic mx-auto text-black bg-gradient-to-r from-purple-500 to-pink-500">
         <Header />
         <div className="flex mt-[30px] justify-center ">
           <div className="text-7xl">Contact</div>
