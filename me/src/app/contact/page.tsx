@@ -1,41 +1,21 @@
 "use client";
 
+import TestAnimation from "@/components/TestAnimation";
 import { Header } from "@/components/header/Header";
 import Link from "next/link";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
-
-
 export default function Contact() {
-  const testRef = useRef(null);
-
-  useEffect(() => {
-    gsap.to(testRef.current, {
-      delay: 1.5,
-      scrambleText: {
-        text: "I sure hope this works for you.",
-        rightToLeft: true,
-        chars: "lowercase",
-      },
-      duration: 5,
-    });
-  }, []);
-
-  gsap.registerPlugin(TextPlugin);
-
   return (
-    <div className="">
-      <Header />
-      <div className="container mx-auto  bg-gradient-to-r from-purple-500 to-pink-500">
-        <div className="flex  justify-center ">
+    <div>
+      <div className="container mx-auto text-black bg-gradient-to-r from-purple-500 to-pink-500">
+        <Header />
+        <div className="flex mt-[30px] justify-center ">
           <div className="text-7xl">Contact</div>
         </div>
         <div className="flex mt-[30px] px-[20px] w-full gap-8 justify-center">
           <div>
             <div className="flex justify-center text-[30px]">Social</div>
-            <div className="text-[50px] flex flex-col">
+            <div className="text-[50px] grid grid-rows-2 grid-flow-col gap-8 mt-[30px] mb-[80px]">
               <Link
                 className="link-hover"
                 href={`https://www.instagram.com/dominggo__/?__pwa=1`}
@@ -48,7 +28,10 @@ export default function Contact() {
               >
                 FACEBOOK
               </Link>
-              <Link className="link-hover" href={`https://mail.google.com`}>
+              <Link
+                className="link-hover flex justify-center"
+                href={`https://mail.google.com`}
+              >
                 EMAIL
               </Link>
               <Link className="link-hover" href={``}>
@@ -57,6 +40,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <TestAnimation />
       </div>
     </div>
   );
