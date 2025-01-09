@@ -12,7 +12,7 @@ export default function About() {
   const { x, y } = useFollowPointer(ref);
 
   return (
-    <div className="border mx-auto max-h-full bg-gradient-to-r from-purple-500 to-pink-500">
+    <div className="border mx-auto max-h-full  bg-gradient-to-r from-purple-500 to-pink-500">
       <Header />
       <div className="flex justify-center mt-[30px]">
         <motion.div
@@ -32,7 +32,7 @@ export default function About() {
         <div className="w-6/12">
           <div className="text-[30px]">Get to know me!</div>
           <motion.div
-            className="text-[20px] antialiased	mt-[20px]"
+            className="text-[20px] font-honk antialiased	mt-[20px]"
             whileHover={{ scale: [null, 1.5, 1.4] }}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
