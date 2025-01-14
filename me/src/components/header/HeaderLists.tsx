@@ -7,7 +7,7 @@ export const headerlists = [
     link: "/",
   },
   {
-    id: 1345676543,
+    id: 134567654,
     title: "ABOUT",
     link: "/about",
   },

@@ -19,7 +19,7 @@ export const skillslists = [
   },
   {
     icon: <FaHtml5 />,
-    id: 1345676543,
+    id: 134567654,
     title: "HTML",
   },
   {
@@ -79,7 +79,7 @@ export const serverskillslists = [
   },
   {
     icon: <FaHtml5 />,
-    id: 1345676543,
+    id: 134567654,
     title: "MySQL",
   },
   {
