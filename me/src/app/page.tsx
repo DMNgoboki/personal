@@ -25,7 +25,7 @@ export default function Home() {
         />
       </Head>
       <main>
-        <div className="experience">
+        <div className="experience bg-transparent">
           <Header />
           <ThreeScene />
         </div>

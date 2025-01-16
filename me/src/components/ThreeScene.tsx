@@ -180,7 +180,6 @@ const ThreeScene = () => {
             b: 0.54,
             duration: 2,
           });
-
         },
       });
 
@@ -231,13 +230,13 @@ const ThreeScene = () => {
   }, []);
 
   return (
-    <>
-      <div className="overlay-text">
-        {" "}
+    <div>
+      {/* <Header /> */}
+      <div className="overlay-text w-full p-[50px] ">
         <Hero />
       </div>
       <canvas ref={canvasRef} style={{ display: "block" }} />
-    </>
+    </div>
   );
 };
 

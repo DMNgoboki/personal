@@ -16,7 +16,7 @@ export default function About() {
       <Header />
       <div className="flex justify-center mt-[30px]">
         <motion.div
-          className="text-[30px] xl:text-[50px]"
+          className="text-5xl font-extrabold"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{

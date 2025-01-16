@@ -6,8 +6,8 @@ import BackgroundVideo from "@/components/BackgroundVideo";
 export default function Project() {
   return (
     <div className="container mx-auto">
-      <Header />
       <div>
+        {/* <Header /> */}
         <BackgroundVideo />
       </div>
     </div>
