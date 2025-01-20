@@ -7,11 +7,11 @@ export default function Contactext() {
   return (
     <div>
       <div className="flex mt-[50px] justify-center ">
-        <div className="font-extrabold text-7xl">CONTACT</div>
+        <div className="font-extrabold text-[#000080] text-7xl">CONTACT</div>
       </div>
       <div className="flex mt-[40px] px-[20px] w-full gap-8 justify-center">
         <div>
-          <div className="flex font-extrabold  justify-center text-5xl">
+          <div className="flex font-extrabold text-[#000080] justify-center text-5xl">
             Social
           </div>
           <div className="text-5xl font-extrabold grid grid-rows-2 grid-flow-col gap-8 mt-[50px] mb-[40px]">
@@ -42,7 +42,7 @@ export default function Contactext() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center text-blue-500">
         <TestAnimation />
       </div>
     </div>

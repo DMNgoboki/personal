@@ -12,10 +12,10 @@ const BackgroundVideo2 = () => {
         <source src="/videos/my-video2.mp4" type="video/mp4" />
       </video>
       <div className="{styles.content}">
-        <h1 className="p-0">
+        <h1 className="p-0 text-blue-500">
           <Header />
         </h1>
-        <div className="">
+        <div>
           <Contactext />
         </div>
       </div>

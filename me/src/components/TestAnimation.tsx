@@ -19,11 +19,11 @@ export default function TestAnimation() {
   }, []);
 
   return (
-    <div className="flex justify-center"
+    <div
+      className="flex justify-center"
       id="test"
       ref={testRef}
       style={{
-        color: "black",
         padding: "30px",
         fontSize: "3em",
         textAlign: "right",
