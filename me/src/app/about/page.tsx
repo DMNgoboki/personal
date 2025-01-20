@@ -12,7 +12,7 @@ export default function About() {
   const { x, y } = useFollowPointer(ref);
 
   return (
-    <div className="border mx-auto max-h-full  bg-gradient-to-r from-purple-500 to-pink-500">
+    <div className=" mx-auto max-h-full  bg-gradient-to-r from-purple-500 to-pink-500">
       <Header />
       <div className="flex justify-center mt-[30px]">
         <motion.div
@@ -28,7 +28,7 @@ export default function About() {
           About me
         </motion.div>
       </div>
-      <div className="flex mt-[30px] gap-[30px] mb-[90px] px-[20px] w-full justify-between">
+      <div className="flex mt-[30px] gap-[30px] px-[20px] w-full justify-between">
         <div className="w-6/12">
           <div className="text-[30px]">Get to know me!</div>
           <motion.div
@@ -48,7 +48,7 @@ export default function About() {
             learn new things.
           </motion.div>
         </div>
-        <div className="w-6/12">
+        <div className="w-6/12 mb-[128px]">
           <div className="text-[30px]">My Skills</div>
           <div className="text-[20px] mt-[20px]">Client</div>
           <motion.div
