@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/BackgroundVideo.module.css";
 import { Header } from "./header/Header";
-import Contact from "@/app/contact/page";
+import Link from "next/link";
+import TestAnimation from "./TestAnimation";
 import Contactext from "./contact/Contactext";
 
 const BackgroundVideo2 = () => {
@@ -14,8 +15,9 @@ const BackgroundVideo2 = () => {
         <h1 className="p-0">
           <Header />
         </h1>
-        <p></p>
-        {/* <Contactext /> */}
+        <div className="">
+          <Contactext />
+        </div>
       </div>
     </div>
   );

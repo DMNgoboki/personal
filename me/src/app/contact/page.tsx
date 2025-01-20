@@ -6,8 +6,7 @@ import Contactext from "@/components/contact/Contactext";
 export default function Contact() {
   return (
     <div>
-      {/* <BackgroundVideo2 /> */}
-      <Contactext />
+      <BackgroundVideo2 />
     </div>
   );
 }
