@@ -5,7 +5,6 @@ import { Header } from "@/components/header/Header";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useFollowPointer } from "@/components/Use-follow-pointer";
-import { Footer } from "@/components/footer/Footer";
 
 export default function About() {
   const ref = useRef(null);

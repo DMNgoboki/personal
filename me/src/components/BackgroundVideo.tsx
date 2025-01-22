@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/BackgroundVideo.module.css";
 import { Header } from "./header/Header";
 import Link from "next/link";
+import HoverSound from "./Sound1";
 
 const BackgroundVideo = () => {
   return (
@@ -32,6 +33,7 @@ const BackgroundVideo = () => {
           >
             Blog WEB
           </Link>
+          <HoverSound />
         </div>
       </div>
     </div>
