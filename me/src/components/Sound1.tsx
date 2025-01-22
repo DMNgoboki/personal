@@ -1,14 +1,23 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const HoverSound = () => {
+  const [isActivated, setIsActivated] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const playSound = () => {
+  const activateSound = () => {
+    setIsActivated(true);
     if (audioRef.current) {
+      audioRef.current.play().catch((error) => {
+        console.error("User interaction required:", error);
+      });
+    }
+  };
+
+  const playSound = () => {
+    if (isActivated && audioRef.current) {
       audioRef.current.currentTime = 0;
-      // Браузерийн бодлогыг давахын тулд catch ашиглаж алдааг барина
       audioRef.current.play().catch((error) => {
         console.error("Error playing sound:", error);
       });
@@ -17,22 +26,22 @@ const HoverSound = () => {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Hover</h1>
-      <button
-        onClick={() => {
-          audioRef.current?.play();
-        }}
-        style={{
-          marginBottom: "20px",
-          padding: "10px 20px",
-          backgroundColor: "lightblue",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-      >
-        Click to Activate Sound
-      </button>
+      <h1>Hover with Sound</h1>
+      {!isActivated && (
+        <div
+          onClick={activateSound}
+          style={{
+            marginBottom: "20px",
+            padding: "10px 20px",
+            backgroundColor: "lightblue",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          Click to Activate Hover Sound
+        </div>
+      )}
       <div
         onMouseEnter={playSound}
         style={{
