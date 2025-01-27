@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        honk: ['"Honk"', 'sans-serif'],
+        sixtyfour: ["Sixtyfour Convergence", "sans-serif"],
+        rubik: ["Rubik Distressed", "sans-serif"],
+        radley: ["Radley", "sans-serif"],
+        anton: ["Anton SC", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

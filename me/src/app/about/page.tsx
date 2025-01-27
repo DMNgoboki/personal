@@ -15,7 +15,7 @@ export default function About() {
       <Header />
       <div className="flex justify-center mt-[30px]">
         <motion.div
-          className="text-5xl font-extrabold"
+          className="text-5xl font-rubik font-extrabold"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -29,9 +29,9 @@ export default function About() {
       </div>
       <div className="flex mt-[30px] gap-[30px] px-[20px] w-full justify-between">
         <div className="w-6/12">
-          <div className="text-[30px]">Get to know me!</div>
+          <div className="text-[30px] font-rubik">Get to know me!</div>
           <motion.div
-            className="text-[20px] font-honk antialiased	mt-[20px]"
+            className="text-[20px] font-radley antialiased	mt-[20px]"
             whileHover={{ scale: [null, 1.5, 1.4] }}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -48,8 +48,8 @@ export default function About() {
           </motion.div>
         </div>
         <div className="w-6/12 mb-[128px]">
-          <div className="text-[30px]">My Skills</div>
-          <div className="text-[20px] mt-[20px]">Client</div>
+          <div className="text-[30px] font-rubik">My Skills</div>
+          <div className="text-[20px] font-rubik mt-[20px]">Client</div>
           <motion.div
             className="box flex flex-wrap gap-4 mt-[8px]"
             initial={{ opacity: 0, scale: 0.5 }}
@@ -74,7 +74,7 @@ export default function About() {
               </div>
             ))}
           </motion.div>
-          <div className="text-[20px] mt-[10px]">Server</div>
+          <div className="text-[20px] font-rubik mt-[10px]">Server</div>
           <motion.div
             className="flex flex-wrap gap-4 mt-[8px]"
             initial={{ opacity: 0, scale: 0.5 }}

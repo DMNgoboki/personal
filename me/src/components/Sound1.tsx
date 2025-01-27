@@ -30,16 +30,8 @@ const HoverSound = () => {
       {!isActivated && (
         <div
           onClick={activateSound}
-          style={{
-            marginBottom: "20px",
-            padding: "10px 20px",
-            backgroundColor: "lightblue",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-          }}
         >
-          Click to Activate Hover Sound
+          PROJECT
         </div>
       )}
       <div
