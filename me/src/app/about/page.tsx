@@ -11,7 +11,7 @@ export default function About() {
   const { x, y } = useFollowPointer(ref);
 
   return (
-    <div className=" mx-auto max-h-full bg-[url(/images/galaxy.png)]">
+    <div className="text-white mx-auto max-h-full bg-[url(/images/galaxy.png)]">
       <Header />
       <div className="flex justify-center mt-[30px]">
         <motion.div
@@ -67,7 +67,7 @@ export default function About() {
           >
             {skillslists.map((skillslist) => (
               <div key={skillslist.id}>
-                <button className="btn btn-active btn-secondary">
+                <button className="btn bg-yellow-400 btn-active btn-secondary">
                   {skillslist.icon}
                   {skillslist.title}
                 </button>
@@ -92,7 +92,7 @@ export default function About() {
           >
             {serverskillslists.map((serverskillslist) => (
               <div key={serverskillslist.id}>
-                <button className="btn btn-active btn-secondary">
+                <button className="bg-yellow-400 btn btn-active btn-secondary">
                   {serverskillslist.icon}
                   {serverskillslist.title}
                 </button>

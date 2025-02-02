@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div className="container font-honk w-full mt-[100px]">
       <div className="flex gap-[50px]">
-        <div className="w-6/12 bg-clip-text text-transparent font-rubik bg-gradient-to-r from-blue-500 to-slate-500">
+        <div className="w-6/12 bg-clip-text text-transparent font-rubik bg-gradient-to-r from-yellow-500 to-slate-500">
           <h1 className="text-5xl font-extrabold "> Hello, I'm Batbold.</h1>
           <h1 className="text-5xl font-extrabold">I'm Fullstack devoloper.</h1>
         </div>

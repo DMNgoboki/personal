@@ -67,6 +67,10 @@ export const skillslists = [
     id: 6,
     title: "MUI",
   },
+  {
+    id: 7,
+    title: "GSAP",
+  },
 ];
 
 ////////Server//////////

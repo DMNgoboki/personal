@@ -11,7 +11,7 @@ const BackgroundVideo = () => {
         <source src="/videos/my-video.mp4" type="video/mp4" />
       </video>
       <div className="{styles.content}">
-        <h1 className="p-0">
+        <h1 className="p-0 text-red-500">
           <Header />
         </h1>
         <div className="mt-[150px] font-sixtyfour p-5 pl-20 flex flex-col gap-10">
