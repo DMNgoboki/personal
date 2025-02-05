@@ -1,10 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 
 const HoverSound = () => {
   const [isActivated, setIsActivated] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   const activateSound = () => {
     setIsActivated(true);
@@ -25,31 +27,47 @@ const HoverSound = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Hover with Sound</h1>
+    <div>
       {!isActivated && (
         <div
-          onClick={activateSound}
+          className="flex bg-clip-text cursor-pointer  hover:text-black font-sixtyfour justify-center mt-[100px] transition"
+          onClick={() => {
+            setIsVisible(!isVisible);
+            activateSound();
+          }}
         >
-          PROJECT
+          PROJECTS VIEW
         </div>
       )}
-      <div
-        onMouseEnter={playSound}
-        style={{
-          width: "200px",
-          height: "100px",
-          backgroundColor: "lightgray",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          cursor: "pointer",
-          borderRadius: "8px",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-          transition: "transform 0.3s ease",
-        }}
-      >
-        Hover Me
+      <div>
+        <div
+          className={`${
+            isVisible ? "block" : "hidden"
+          } mt-[150px] font-sixtyfour transition-opacity duration-500 
+          w-[670px] p-5 flex flex-col gap-10`}
+        >
+          <Link
+            onMouseEnter={playSound}
+            className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
+            href={`https://www.instagram.com/dominggo__/?__pwa=1`}
+          >
+            FOOD DELIVERY
+          </Link>
+          <Link
+            onMouseEnter={playSound}
+            className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
+            href={`https://blackonefurniture.vercel.app/`}
+          >
+            FURNITURE
+          </Link>
+          <Link
+            onMouseEnter={playSound}
+            className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
+            href={`https://www.instagram.com/dominggo__/?__pwa=1`}
+          >
+            Blog WEB
+          </Link>
+        </div>
       </div>
       <audio ref={audioRef} src="/sounds/select-sound.mp3" preload="auto" />
     </div>
