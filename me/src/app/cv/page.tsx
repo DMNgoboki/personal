@@ -6,7 +6,7 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 
 export default function Cv() {
   return (
-    <div className="container mx-auto  bg-gradient-to-r from-purple-500 to-pink-500">
+    <div className="container mx-auto text-white bg-black">
       <Header />
       <div>
         <iframe
