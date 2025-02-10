@@ -20,9 +20,9 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-howler": "^5.2.0",
     "react-icons": "^5.2.1",
     "react-locomotive-scroll": "^0.2.2",
-    "react-sound": "^1.2.0",
     "reveal.js": "^5.1.0",
     "three": "latest"
   },
