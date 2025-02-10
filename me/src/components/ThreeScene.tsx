@@ -7,9 +7,8 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "../styles/Globals.css";
-import "../styles/Font.css";
-import { Header } from "./header/Header";
+import "@/styles/Globals.css";
+import "@/styles/Font.css";
 import { Hero } from "./hero/Hero";
 
 const Mathutils = {
