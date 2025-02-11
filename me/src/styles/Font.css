@@ -1,9 +1,0 @@
-
-@font-face {
-  font-family: "Honk";
-  src: url("/fonts/Honk-Regular.ttf") format("truetype");
-}
-
-body {
-  font-family: "Honk", sans-serif;
-}

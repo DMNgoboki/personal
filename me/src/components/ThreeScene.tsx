@@ -8,7 +8,6 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/globals.css";
-import "../styles/Font.css";
 import { Hero } from "./hero/Hero";
 
 const Mathutils = {

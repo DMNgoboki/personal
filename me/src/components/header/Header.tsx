@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { headerlists } from "./HeaderLists";
 
-
 export function Header() {
   return (
     <div className="container mx-auto bg-transparent">
