@@ -2,44 +2,55 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
-import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
-import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "@/styles/Globals.css";
+import "@/styles/globals.css";
 import "@/styles/Font.css";
 import { Hero } from "./hero/Hero";
 
 const Mathutils = {
-  normalize: function ($value, $min, $max) {
+  normalize: function ($value: number, $min: number, $max: number): number {
     return ($value - $min) / ($max - $min);
   },
-  interpolate: function ($normValue, $min, $max) {
+  interpolate: function (
+    $normValue: number,
+    $min: number,
+    $max: number
+  ): number {
     return $min + ($max - $min) * $normValue;
   },
-  map: function ($value, $min1, $max1, $min2, $max2) {
-    if ($value < $min1) {
-      $value = $min1;
-    }
-    if ($value > $max1) {
-      $value = $max1;
-    }
-    return this.interpolate(this.normalize($value, $min1, $max1), $min2, $max2);
+  map: function (
+    $value: number,
+    $min1: number,
+    $max1: number,
+    $min2: number,
+    $max2: number
+  ): number {
+    return this.interpolate(
+      this.normalize(Math.max($min1, Math.min($max1, $value)), $min1, $max1),
+      $min2,
+      $max2
+    );
   },
 };
 
 const ThreeScene = () => {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
+    if (!canvasRef.current) return;
     const canvas = canvasRef.current;
+
     const renderer = new THREE.WebGLRenderer({
       canvas,
       antialias: true,
-      shadowMapEnabled: true,
-      shadowMapType: THREE.PCFSoftShadowMap,
     });
+
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
     const ww = window.innerWidth;
     const wh = window.innerHeight;
@@ -173,12 +184,15 @@ const ThreeScene = () => {
           cameraTargetPercentage = tubePerc.percent;
         },
         onComplete: () => {
-          gsap.to(scene.fog.color, {
-            r: 0.54,
-            g: 0.0,
-            b: 0.54,
-            duration: 2,
-          });
+          gsap.to(
+            {},
+            {
+              duration: 2,
+              onUpdate: function () {
+                scene.fog?.color.setRGB(0.54, 0.0, 0.54);
+              },
+            }
+          );
         },
       });
 
