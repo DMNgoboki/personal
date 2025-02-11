@@ -1,11 +1,8 @@
 import { Header } from "@/components/header/Header";
-import { Hero } from "@/components/hero/Hero";
 import React from "react";
 import Head from "next/head";
 import ThreeScene from "@/components/ThreeScene";
-import { Footer } from "@/components/footer/Footer";
 import "../styles/globals.css";
-
 
 // import gsap from "gsap-trial";
 // import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
