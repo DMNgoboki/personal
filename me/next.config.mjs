@@ -4,6 +4,7 @@ const nextConfig = {
     esmExternals: "loose",
   },
   transpilePackages: ["three"],
+  output: "export",
 };
 
 export default nextConfig;
