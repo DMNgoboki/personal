@@ -49,7 +49,7 @@ const HoverSound = () => {
           <Link
             onMouseEnter={playSound}
             className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
-            href={`https://www.instagram.com/dominggo__/?__pwa=1`}
+            href={``}
           >
             FOOD DELIVERY
           </Link>
@@ -63,7 +63,7 @@ const HoverSound = () => {
           <Link
             onMouseEnter={playSound}
             className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
-            href={`https://www.instagram.com/dominggo__/?__pwa=1`}
+            href={``}
           >
             Blog WEB
           </Link>
