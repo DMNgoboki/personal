@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run next dev",
-    "build": "npm run next build",
-    "start": "npm run next start",
-    "lint": "npm run next lint"
+    "dev": "bun run next dev",
+    "build": "bun run next build",
+    "start": "bun run next start",
+    "lint": "bun run next lint"
   },
   "dependencies": {
     "@fontsource-variable/honk": "^5.0.2",
