@@ -11,7 +11,7 @@ export default function Cv() {
         <iframe
           src="/my-document.pdf"
           width="100%"
-          height="600px"
+          height="100%"
           style={{ border: "none" }}
         />
       </div>

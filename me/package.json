@@ -9,14 +9,22 @@
     "lint": "bun run next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@fontsource-variable/honk": "^5.0.2",
     "@fontsource/roboto": "^5.0.13",
     "@gsap/react": "^2.1.1",
+    "@mui/icons-material": "^6.4.4",
+    "@mui/material": "^6.4.4",
+    "@mui/styled-engine-sc": "^6.4.3",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "@types/gsap": "^3.0.0",
+    "axios": "^1.7.9",
+    "dropdown": "^0.2.0",
     "framer-motion": "^12.0.0-alpha.0",
     "gsap": "^3.12.5",
+    "mui": "^0.0.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -24,7 +32,10 @@
     "react-icons": "^5.2.1",
     "react-locomotive-scroll": "^0.2.2",
     "reveal.js": "^5.1.0",
-    "three": "latest"
+    "sonner": "^1.7.4",
+    "styled-components": "^6.1.15",
+    "three": "latest",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.3",

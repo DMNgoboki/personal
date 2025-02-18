@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { headerlists } from "./HeaderLists";
+import DrawerAppBar from "./Appbar";
 
 export function Header() {
   return (
@@ -13,6 +14,9 @@ export function Header() {
             <div>{headerlist.title}</div>
           </Link>
         ))}
+      </div>
+      <div className="lg:hidden">
+        <DrawerAppBar />
       </div>
     </div>
   );

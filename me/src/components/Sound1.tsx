@@ -43,26 +43,26 @@ const HoverSound = () => {
         <div
           className={`${
             isVisible ? "block" : "hidden"
-          } mt-[150px] font-sixtyfour transition-opacity duration-500 
-          w-[670px] p-5 flex flex-col gap-10`}
+          } mt-[150px] font-sixtyfour  transition-opacity duration-500 
+          w-11/12 p-5 flex flex-col gap-10`}
         >
           <Link
             onMouseEnter={playSound}
-            className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
+            className="bg-clip-text text-2xl lg:text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
             href={``}
           >
             FOOD DELIVERY
           </Link>
           <Link
             onMouseEnter={playSound}
-            className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
+            className="bg-clip-text text-2xl lg:text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
             href={`https://blackonefurniture.vercel.app/`}
           >
             FURNITURE
           </Link>
           <Link
             onMouseEnter={playSound}
-            className="bg-clip-text text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
+            className="bg-clip-text text-2xl lg:text-5xl text-transparent bg-black hover:text-gray-700 transition duration-300"
             href={``}
           >
             Blog WEB

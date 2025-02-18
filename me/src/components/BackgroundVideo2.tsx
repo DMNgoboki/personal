@@ -5,7 +5,7 @@ import Contactext from "./contact/Contactext";
 
 const BackgroundVideo2 = () => {
   return (
-    <div className={styles.videoContainer}>
+    <div className={styles.videoContainer} style={{ zIndex: 5 }}>
       <video autoPlay loop muted className={styles.video}>
         <source src="/videos/my-video2.mp4" type="video/mp4" />
       </video>

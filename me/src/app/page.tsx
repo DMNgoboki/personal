@@ -3,14 +3,6 @@ import React from "react";
 import Head from "next/head";
 import ThreeScene from "@/components/ThreeScene";
 
-
-// import gsap from "gsap-trial";
-// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-// import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-// import { useGSAP } from "@gsap/react";
-
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP);
-
 export default function Home() {
   return (
     <div className="container bg-gradient-to-r from-purple-500 to-pink-500">
